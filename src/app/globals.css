@@ -4,35 +4,40 @@
 
 @layer base {
   .dark {
-    --background: 225 9% 9%;
-    --foreground: 210 40% 98%;
+    --background: 220 15% 8%;
+    --foreground: 40 15% 92%;
 
-    --card: 228 9% 11%;
-    --card-foreground: 210 40% 98%;
+    --card: 220 14% 11%;
+    --card-foreground: 40 15% 92%;
 
-    --popover: 228 9% 11%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 220 14% 11%;
+    --popover-foreground: 40 15% 92%;
 
-    --primary: 252 100% 69%;
-    --primary-foreground: 0 0% 100%;
+    /* Dourado elegante */
+    --primary: 38 92% 58%;
+    --primary-foreground: 220 15% 10%;
 
-    --secondary: 228 6% 16%;
-    --secondary-foreground: 210 40% 98%;
+    /* Superfícies secundárias */
+    --secondary: 220 10% 16%;
+    --secondary-foreground: 40 15% 92%;
 
-    --muted: 228 6% 16%;
-    --muted-foreground: 215 20.2% 65.1%;
+    /* Elementos discretos */
+    --muted: 220 10% 18%;
+    --muted-foreground: 215 12% 65%;
 
-    --accent: 228 6% 16%;
-    --accent-foreground: 210 40% 98%;
+    /* Hover e destaques suaves */
+    --accent: 38 30% 22%;
+    --accent-foreground: 40 15% 92%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 72% 52%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 228 6% 16%;
-    --input: 228 6% 16%;
-    --ring: 212.7 26.8% 83.9%;
+    /* Bordas suaves */
+    --border: 220 10% 20%;
+    --input: 220 10% 18%;
+    --ring: 38 92% 58%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
   }
 }
 
@@ -40,9 +45,11 @@
   * {
     @apply border-border antialiased;
   }
+
   html {
     @apply h-full;
   }
+
   body {
     @apply h-full bg-background text-foreground;
   }
